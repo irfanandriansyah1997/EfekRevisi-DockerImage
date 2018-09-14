@@ -21,10 +21,6 @@ apt-get install -y \
     --allow-unauthenticated \
     python python-dev python-pip python-virtualenv
 
-# install node js
-curl -sL https://deb.nodesource.com/setup_8.x | bash -
-apt-get install -y nodejs
-
 # clean current folder
 apt-get clean
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

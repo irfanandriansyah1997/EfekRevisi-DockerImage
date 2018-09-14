@@ -12,9 +12,6 @@ RUN chmod +x script/*.sh
 RUN script/dependencies.sh
 
 # install utilities
-RUN apt-get install -y \
-	--no-install-recommends \
-	--allow-unauthenticated \
-	htop tmux nano
+RUN apt-get install -y --no-install-recommends --allow-unauthenticated htop tmux nano
 
 CMD ["/sbin/my_init"]
